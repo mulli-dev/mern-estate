@@ -15,7 +15,7 @@ export default function OAuth() {
       // create a pop window
       const result = await signInWithPopup(auth, provider);
       // send this data to the backend  for verification and authentication.
-      const res = await fetch("./api/auth/google", {
+      const res = await fetch("/api/auth/google", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
 
