@@ -53,7 +53,7 @@ export default function Profile() {
 
   return (
     <div className="max-w-lg p-3 mx-auto">
-      <h1 className="text-3xl font-semibold text-center my-7">Profile</h1>;
+      <h1 className="text-3xl font-semibold text-center my-7">Profile</h1>
       <form className="flex flex-col gap-3">
         <input
           onChange={(e) => setFile(e.target.files[0])}
