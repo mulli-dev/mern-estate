@@ -185,7 +185,6 @@ export default function Profile() {
         </button>
 
         <Link
-          Link
           className="bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95"
           to={"/create-listing"}
         >
@@ -201,10 +200,10 @@ export default function Profile() {
           {" "}
           Delete account
         </span>
-        <spa onClick={handleSignOut} className="text-red-700 cursor-pointer">
+        <span onClick={handleSignOut} className="text-red-700 cursor-pointer">
           {" "}
           Sign Out
-        </spa>
+        </span>
       </div>
       <p className="text-red-700 mt-5">{error ? error : ""}</p>
       <p className="text-green-700 mt-5">
