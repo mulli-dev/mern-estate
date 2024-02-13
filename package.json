@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon api/index.js",
     "start": "node api/index.js",
-    "build": "vite build"
+    "build": "npm install && npm install --pefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
