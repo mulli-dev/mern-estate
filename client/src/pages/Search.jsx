@@ -114,6 +114,19 @@ export default function Search() {
     const searchQuery = urlParams.toString();
     navigate(`/search?${searchQuery}`);
   };
+  const onShowMoreClick = async () => {
+    const numberOfListings = listings.length;
+    const startIndex = numberOfListings;
+    const urlParams = new URLSearchParams(location.search);
+    urlParams.set("startIndex", startIndex);
+    const searchQuery = urlParams.toString();
+    const res = await fetch(`/api/listing/get?${searchQuery}`);
+    const data = await res.json();
+    if (data.length < 9) {
+      setShowMore(false);
+    }
+    setListings([...listings, ...data]);
+  };
 
   return (
     <div className="flex flex-col md:flex-row">
@@ -128,7 +141,7 @@ export default function Search() {
               id="searchTerm"
               placeholder="Search..."
               className="w-full p-3 border rounded-lg"
-              //value={sidebardata.searchTerm}
+              value={sidebardata.searchTerm}
               onChange={handleChange}
             />
           </div>
@@ -236,6 +249,14 @@ export default function Search() {
             listings.map((listing) => (
               <ListingItem key={listing._id} listing={listing} />
             ))}
+          {showMore && (
+            <button
+              onClick={onShowMoreClick}
+              className="w-full text-center text-green-700 hover:underline p-7"
+            >
+              Show more
+            </button>
+          )}
         </div>
       </div>
     </div>
