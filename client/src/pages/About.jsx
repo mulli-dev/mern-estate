@@ -4,11 +4,11 @@ export default function About() {
   return (
     <div className="max-w-6xl px-4 py-20 mx-auto">
       <h1 className="mb-4 text-3xl font-bold text-slate-800">
-        About Sahand Estate
+        About Posh Homes
       </h1>
       <p className="mb-4 text-slate-700">
-        Sahand Estate is a leading real estate agency that specializes in
-        helping clients buy, sell, and rent properties in the most desirable
+        Posh Homes is a leading real estate agency that specializes in helping
+        clients buy, sell, and rent properties in the most desirable
         neighborhoods. Our team of experienced agents is dedicated to providing
         exceptional service and making the buying and selling process as smooth
         as possible.
