@@ -258,7 +258,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 value={formData.bedrooms}
               />
-              <p>Bedroom</p>
+              <p>Bedrooms</p>
             </div>
             <div className="flex items-center gap-2">
               <input
