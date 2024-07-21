@@ -89,7 +89,7 @@ export default function Listing() {
 
           <div className="flex flex-col max-w-4xl gap-4 p-3 mx-auto my-7">
             <p className="text-2xl font-semibold">
-              {listing.name} - ${" "}
+              {listing.name} - KSh{" "}
               {listing.offer
                 ? listing.discountPrice.toLocaleString("en-US")
                 : listing.regularPrice.toLocaleString("en-US")}
