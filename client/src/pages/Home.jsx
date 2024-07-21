@@ -50,13 +50,13 @@ export default function Home() {
   return (
     <div>
       {/* top */}
-      <div className="flex flex-col max-w-6xl gap-6 px-3 mx-auto p-28">
-        <h1 className="text-3xl font-bold text-slate-700 lg:text-6xl">
+      <div className="flex flex-col max-w-6xl gap-6 px-3 mx-auto p-28     ">
+        <h1 className="text-3xl font-bold text-blue-700 lg:text-6xl">
           Find your next <span className="text-slate-500">perfect</span>
           <br />
           place with ease
         </h1>
-        <div className="text-xs text-gray-400 sm:text-sm">
+        <div className="text-xs text-blue-400 sm:text-sm">
           Posh Homes is the best place to find your next perfect place to live.
           <br />
           We have a wide range of properties for you to choose from.
